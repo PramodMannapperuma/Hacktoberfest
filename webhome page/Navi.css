@@ -1,0 +1,325 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image:url("Home Page/bg.jpg");
+  background-attachment: fixed;
+      }
+
+.logo-img{
+float: left;
+position: relative;
+margin: 10px 15px 15px 10px;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #192537;
+  background-attachment: fixed;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-top: 27px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #b09e80;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+
+
+
+
+
+
+/*Footer*/
+
+
+footer{
+position: fixed;
+bottom: 0;
+}
+
+
+
+@media (max-height:800px){
+footer { position: static; }
+}
+
+
+.footer{
+background-color: #b09e80;
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+font: bold 16px sans-serif;
+padding: 50px 50px 60px 50px;
+margin-top: 50px;
+}
+
+
+.footer .fleft,
+.footer .fcenter,
+.footer .fright{
+display: inline-block;
+vertical-align: top;
+}
+
+
+.footer .fleft{
+width: 32%;
+}
+
+
+
+.footer h3{
+color: #192537;
+font: normal 36px 'Cookie', cursive;
+margin: 0;
+}
+
+
+.footer h3 span{
+color: #192537;
+}
+
+
+
+.footer .footer-links{
+color: black;
+margin: 20px 0 12px;
+}
+
+
+.footer .footer-links a{
+display:inline-block;
+line-height: 1.8;
+text-decoration: none;
+color: black;
+}
+
+.footer .footer-links a:hover{
+  background-color: #b09e80;
+  color: white;
+  opacity: 0.9;
+}
+
+
+.footer .footer-company-name{
+color: black;
+opacity: 0.99;
+font-size: 14px;
+font-weight: normal;
+margin: 0;
+}
+
+
+.footer .fcenter{
+width: 40%;
+}
+
+
+.footer .fcenter p{
+display: inline-block;
+color: black;
+vertical-align: middle;
+margin:0;
+}
+
+
+.footer .fright{
+width:;
+}
+
+
+.footer .footer-company-about{
+line-height: 20px;
+color: #92999f;
+font-size: 13px;
+font-weight: normal;
+margin: 0;
+}
+
+
+.footer .footer-company-about span,
+.footer .footer-company-about p{
+display: block;
+color: black;
+font-size: 18px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+
+.footer .footer-icons{
+margin-top: 25px;
+}
+
+
+.footer .footer-icons a,img.ico{
+display: inline-block;
+width: 35px;
+height: 35px;
+cursor: pointer;
+background-color: #b09e80;
+border-radius: 2px;
+font-size: 20px;
+color: #ffffff;
+text-align: center;
+line-height: 35px;
+
+margin-right: 3px;
+margin-bottom: 5px;
+}
+
+.footer .footer-icons a:hover,img.ico{
+  opacity: 0.9;
+
+}
+
+
+
+.footer.footer-news {
+padding: 10px; width: 35%;
+margin: ;
+}
+
+
+.footer form {
+color: white; width: 75%
+}
+
+
+.footer input[type=text] {
+width: 100%;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid #ccc;
+box-sizing: border-box;
+}
+
+
+.footer button {
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 25%;
+}
+
+
+.footer .subbtn{
+width: 25%;
+background-color: black;
+padding: 10px 20px
+}
+
+.footer button[type=submit] {
+  background-color: black;
+}
+
+.footer button:hover,a:hover {
+color: #b09e80;
+background-color: black;
+opacity: 0.95;
+}
+
+
+
+
+.footer a:active{
+color: blue;
+}
+
+
+
+/*refund policy , terms & conditions*/
+div.refund{width: 45%;
+margin: auto;
+}
+
+
+p.refund{color: black; text-align: justify;
+font-size: 1.2em; margin: 0
+}
+
+
+p.terms{color: black; text-align: justify;
+font-size: 1.2em; margin: 0
+}
+
+
+div.terms{width: 45%;
+margin: auto;
+}
+
+
+h1.terms{color:black;
+font-size: 2.4em; text-align: center;
+font-family: sans-serif; text-decoration: underline;
+}
+
+
+/*search box*/
+* {
+box-sizing: border-box;
+}
+
+
+div.search{overflow: hidden;
+background-color: ;
+display:inline;float: right;
+width: 100%;
+}
+
+
+form.example input[type=text] {
+padding: 10px;
+font-size: 17px;
+border: 1px solid grey;
+float: right;
+width: 22%;
+background: #f1f1f1;
+}
+
+
+form.example button {
+float: right;
+width: 6%;
+padding: 10px;
+background:#e0ac1c;
+color: white;
+font-size: 17px;
+border: 1px solid grey;
+border-left: none;
+cursor: pointer;
+}
+
+
+form.example button:hover {
+background: #C3920A;
+}
+
+
+form.example::after {
+content: "";
+clear: both;
+display: table;
+}

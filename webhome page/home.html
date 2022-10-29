@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="Navi.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel = "icon" href ="Home Page/titlelogo.jpg" type = "image/x-icon">
+<title>Eternal Bathware</title>
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<style>
+
+
+
+      
+
+
+#mySidenav a.ab {
+  position: absolute;
+  top: 100px;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 125px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#signin {
+  top: 20px;
+  background-color: #b09e80;
+}
+
+
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+/*transparent image*/
+.middle{
+  border: 0;
+  width: 300px;
+  height: 300px;
+  margin-top: 150px;
+  float:left;
+  margin-right: 50px;
+} 
+
+
+.imgtext{
+  
+  font-size: 20px
+  display:none;
+  text-align: center;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: ;
+  height: 37px;
+}
+
+  
+.middle:hover{
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 0.6s ease;
+}
+
+
+
+#S{
+  background-image: url("Home Page/shower1.jpg");
+  background-size: cover;
+  margin-left: 50px;
+  margin-top: 90px;
+}
+
+
+#A{
+  background-image: url("Home Page/acces.jpg");
+  background-size: cover;
+  margin-left: 20px;
+  margin-top: 90px;
+}
+
+
+#C{
+  background-image: url("Home Page/com11.jpg");
+  background-size: cover;
+  margin-left: 20px;
+  margin-top: 90px;
+}
+
+#W{
+  background-image: url("Home Page/washbasin.jpg");
+  background-size: cover;
+  margin-left: 20px;
+  margin-top: 90px;
+}
+
+
+.offers{
+ background-color:black;
+ text-align:center;
+ padding:50px;
+ margin-top:550px;
+ margin-left: 20px;
+ margin-right: 20px;
+ color: white;
+}
+.box1{
+   padding:50px;
+   border: 5px solid white;
+
+}
+
+.new_bg{
+  background-color: #192537;
+  padding-top: 1px;
+  padding-bottom: 50px;
+
+
+}
+
+/* Sign In*/
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #192537;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.sign-up a:hover{
+  background-color: white;
+  color: black;
+  opacity: 0.9;
+}
+
+img.avatar {
+  width: 25%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+span.psw a:hover{
+  background-color: #f1f1f1;
+  color: black;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 1% auto 1% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+.footer{
+background-color: #b09e80;
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+font: bold 16px sans-serif;
+padding: 50px 50px 60px 50px;
+margin-top: 0px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="bg-img"> 
+<div class="topnav">
+  <div class="bg-div">
+   <img class="logo-img" src="Home Page/logo2.png" width="160" height="80" ALT="align box" ALIGN=CENTER>
+  </div>
+      <div class="topnav-right">
+         <a class="active" href="home.html">Home</a>
+         <a href="Product_list.html">Product</a>
+         <a href="About_us.html">About</a>
+         <a href="Contact_us.html">Contact</a>
+      </div>
+</div>
+
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="Home Page/bg1.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Home Page/bg8.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+    <img src="Home Page/bg7.jpg" style="width:100%">
+</div>
+
+
+</div>
+
+
+
+<script>
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 10000); 
+
+}
+
+</script>
+
+<div id="mySidenav" class="sidenav">
+  <a href="#signin" class="ab" id="signin" onclick="document.getElementById('id01').style.display='block'">Sign-In &nbsp;<i class="fa fa-user-circle" aria-hidden="true"></i> </a>
+
+  <div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h2>Sign In</h2>
+      <img src="Home Page/avatar.jpeg" alt="Avatar" class="avatar">
+
+    </div>
+
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+        <br>
+      
+        
+      </label>
+      <center><h3><div class="sign-up"><a href="#" style="text-decoration: none; color: black">Sign Up</a></div></h3></center>
+    </div>
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw" > <a href="#" style="text-decoration: none;">Forgot password?</a> </span>
+
+    </div>
+  </form>
+</div>
+</div>
+  
+
+
+  </div>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+</div>
+
+<div class="new_bg">
+
+    <div style="background-color: black; color: white; padding:2px;text-align:center;margin-left: 20px;margin-right: 20px; margin-top: 150px;height: 95px;">
+           <h1><i>NEW YEAR DISCOUNTS</i></h1>
+           <hr color="red" width="150px" size="3" >
+      </div>
+
+
+   <div class="discounts"> 
+   <div class="middle"id="S"><h1 class="imgtext"><i>𝟹𝟶% 𝚘𝚏𝚏</i></h1></div>
+   <div class="middle"id="A"><h1 class="imgtext"><i>𝟸𝟶% 𝚘𝚏𝚏</i></h1></div>
+   <div class="middle"id="C"><h1 class="imgtext"><i>𝟷𝟻% 𝚘𝚏𝚏</i></h1></div>
+   <div class="middle" id="W"><h1 class="imgtext"><i>𝟸𝟶% 𝚘𝚏𝚏</i></h1></div>
+   </div>
+
+
+
+   
+     <div class="offers">
+          <h2 class="under">OFFERS</h2>
+            <hr color="red" width="150px" size="3">
+          <p class="box1">Visit your nearest ETERNAL BATHWARE showroom or dealer for more information.</p>
+     </div>
+
+</div>
+  
+
+<footer class="footer">
+<div class="fleft">
+<h3>Eternal<span> Bathware</span></h3>
+<p class="footer-links">
+<a href="home.html">Home</a>
+|
+<a href="Product_list.html">Product</a>
+|
+<a href="About_us.html">About</a>
+|
+<a href="Contact_us.html">Contact</a><br><br>
+
+</p>
+<p class="footer-company-name">Copyright &copy; 2022,Eternal Bathware.</p>
+</div>
+<div class="fcenter">
+<form>
+<div class="top">
+<p><span style="font-style:normal; font-size: 1.6em;font-family:cursive;">Newsletter</span></p><br>
+<label for="email"><p class="footer-company-about">Promotions, new products and sales. Directly to your inbox.</p> </label>
+<input type="text" placeholder="Enter your Email to subscribe newsletter" name="email" required>
+<button type="submit" class="subbtn" id="subbtn">Join</button>
+</input>
+
+</div>
+</form>
+</div>
+<div class="fright">
+<p class="footer-company-about">
+<span>Follow Us</span>
+</p>
+<div class="footer-icons">
+<a target="_blank" href="https://m.facebook.com/Eternal-Bathware-110462294916120/"><img class= "ico" src="icon/fb.png"></a>
+<a target="_blank" href="https://instagram.com/eternal_bathware?utm_medium=copy_link"><img class= "ico" src="icon/insta.png"></a>
+<a target="_blank" href="#"><img class= "ico" src="icon/twitter.png"></a>
+<a target="_blank" href="#"><img class= "ico" src="icon/youtube.png"></a>
+</div>
+<p class="footer-links">
+<a href="#" style="font-size: 0.8em">Latest News</a><br>
+<a href="#" target="_blank" style="font-size: 0.8em">Terms & Conditions</a><br>
+<a href="#" target="_blank" style="font-size: 0.8em">Refund Policy</a><br><br>
+<a href="home.html" style="font-size: 0.9em; color: black;"><i>Back to Home</i></a>
+</p>
+</div>
+</footer>
+
+</body>
+</html>
