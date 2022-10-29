@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/56016c02ef.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    </style>
+    <title>Staybnb</title>
+</head>
+<body>
+    <div class="header">
+        <nav id="navBar">
+            <img src="logo.png" class="logo">
+            <ul class="nav-links">
+              <li><a href="#" class="active">Popular Places</a></li>
+              <li><a href="#">Travel Outside</a></li>
+              <li><a href="#">Online Packages</a></li>
+            </ul>
+            <a href="#" class="register-btn">Register Now</a>
+            <i class="fas fa-bars" onclick="togglebtn()"></i>
+        </nav>
+        <div class="container">
+            <h1>Find your next stay</h1>
+            <div class="search-bar">
+                <form>
+                    <div class="location-input">
+                        <label>Location</label>
+                        <input type="text" placeholder="Where are you going?">
+                    </div>
+                    <div>
+                        <label>Check in</label>
+                        <input type="text" placeholder="Add date">
+                    </div>
+                    <div>
+                        <label>Check out</label>
+                        <input type="text" placeholder="Add date">
+                    </div>
+                    <div>
+                        <label>Guest</label>
+                        <input type="text" placeholder="Add guest">
+                    </div>
+                    <button type="submit"><img src="search.png"></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h2 class="sub-title">Exclusives</h2>
+        <div class="exclusives">
+            <div>
+                <img src="image-1.png">
+                <span>
+                    <h3>London</h3>
+                    <p>Starts @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="image-2.png">
+                <span>
+                    <h3>Switzerland</h3>
+                    <p>Starts @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="image-3.png">
+                <span>
+                    <h3>Australia</h3>
+                    <p>Starts @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="image-4.png">
+                <span>
+                    <h3>France</h3>
+                    <p>Starts @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="image-5.png">
+                <span>
+                    <h3>Amsterdam</h3>
+                    <p>Starts @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="image-6.png">
+                <span>
+                    <h3>Netherland</h3>
+                    <p>Starts @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="image-7.png">
+                <span>
+                    <h3>New York</h3>
+                    <p>Starts @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="image-8.png">
+                <span>
+                    <h3>Chicago</h3>
+                    <p>Starts @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="image-9.png">
+                <span>
+                    <h3>San Francisco</h3>
+                    <p>Starts @ $250</p>
+                </span>
+            </div>
+            <div>
+                <img src="image-10.png">
+                <span>
+                    <h3>Shanghai</h3>
+                    <p>Starts @ $250</p>
+                </span>
+            </div>
+        </div>
+        <h2 class="sub-title">Trending Places</h2>
+        <div class="trending">
+            <div>
+                <img src="dubai.png">
+                <h3>Dubai</h3>
+            </div>
+            <div>
+                <img src="new-york.png">
+                <h3>New York</h3>
+            </div>
+            <div>
+                <img src="paris.png">
+                <h3>Paris</h3>
+            </div>
+            <div>
+                <img src="new-delhi.png">
+                <h3>New Delhi</h3>
+            </div>
+        </div>
+        <div class="cta">
+            <h3>Sharing<br>is Earning</h3>
+            <p>Great opportunity to make money by<br>sharing your extra space</p>
+            <a href="#" class="cta-btn">Know More</a>
+        </div>
+        <h2 class="sub-title">Travellers stories</h2>
+        <div class="stories">
+            <div>
+                <img src="story-1.png">
+                <p>Popular European countries with a budget of just $10 000</p>
+            </div>
+            <div>
+                <img src="story-2.png">
+                <p>Travelled more than 100 countries in less than a year</p>
+            </div>
+            <div>
+                <img src="story-3.png">
+                <p>Best experience you get while travelling to Thailand</p>
+            </div>
+        </div>
+        <a href="#" class="start-btn">Start making money</a>
+        <div class="about-msg">
+            <h2>About Staybnb</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci perferendis eos necessitatibus impedit aperiam voluptates esse? Praesentium totam eos distinctio aspernatur cum consequuntur molestias explicabo, doloribus ex numquam consectetur tempora. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, est.</p>
+        </div>
+        <div class="footer">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <hr>
+            <p>Copyright 2022</p>
+        </div>
+    </div>
+    <script>
+        var navBar=document.getElementById("navBar");
+        function togglebtn(){
+            navBar.classList.toggle("hidemenu");
+        }
+    </script>
+</body>
+</html>
